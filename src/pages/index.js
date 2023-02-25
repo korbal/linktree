@@ -5,7 +5,7 @@ function LinkCard({ href, title, image }) {
   return (
     <a
       href="{href}"
-      className="flex items-center p-1 w-full rounded-lg  hover:scale-105 transition-all border bg-gray-100 mb-3"
+      className="flex items-center p-1 w-full rounded-lg  hover:scale-105 transition-all border bg-gray-100 mb-3 max-w-3xl"
     >
       <div className="flex text-center">
         {image && (

@@ -5,7 +5,7 @@ function LinkCard({ href, title, image }) {
   return (
     <a
       href="{href}"
-      className="flex items-center p-1 w-full rounded-lg  hover:scale-105 transition-all border border-gray-300 mb-3"
+      className="flex items-center p-1 w-full rounded-lg  hover:scale-105 transition-all border bg-gray-100 mb-3"
     >
       <div className="flex text-center">
         {image && (
@@ -34,7 +34,7 @@ export default function Home() {
         height={96}
         className="rounded-full"
       />
-      <h1 className="font-bold mt-4 mb-8 text-xl">{data.name}</h1>
+      <h1 className="font-bold mt-4 mb-8 text-xl text-white">{data.name}</h1>
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
